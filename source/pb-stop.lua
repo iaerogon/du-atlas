@@ -14,8 +14,8 @@ if not init then
     text.w = tbw
     text.h = tbh
     
-    text.x = math.random(tbw, rx-tbw)
-    text.y = math.random(tbh, ry-tbh)
+    text.x = math.random(1, math.floor(rx-tbw))
+    text.y = math.random(math.ceil(tbh), math.floor(ry-tbh))
     text.vx = 0.75
     text.vy = 0.5
 end
